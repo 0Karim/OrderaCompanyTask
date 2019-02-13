@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using OrderaTaskVersion2.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace OrderaTaskVersion2.Controllers
 {
@@ -21,6 +22,7 @@ namespace OrderaTaskVersion2.Controllers
         public AccountController()
         {
         }
+
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
